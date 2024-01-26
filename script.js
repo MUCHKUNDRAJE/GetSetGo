@@ -47,3 +47,29 @@ ship.addEventListener('click',function(){
     car.style.backgroundColor="#F3EBEE"
 
 })
+var page3 = document.querySelector("#page3")
+var page1 = document.querySelector("#page1")
+function scrollToSection(page3) {
+    const targetElement = document.getElementById(page3);
+    const startPosition = window.scrollY;
+    const targetPosition = targetElement.offsetTop;
+    const distance = targetPosition - startPosition;
+    const duration = 500;  // Adjust the duration as needed (in milliseconds)
+    let startTime;
+
+    function animateScroll(timestamp) {
+        if (!startTime) startTime = timestamp;
+
+        const progress = timestamp - startTime;
+        const percentage = Math.min(progress / duration, 1);
+
+        window.scrollTo(0, startPosition + distance * percentage);
+
+        if (progress < duration) {
+            window.requestAnimationFrame(animateScroll);
+        }
+    }
+
+    window.requestAnimationFrame(animateScroll);
+}
+

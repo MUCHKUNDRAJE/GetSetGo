@@ -134,6 +134,7 @@ background-color: #F3EBEE;
     gap: 40px;
     text-transform:capitalize ;
     color: #551A8B;
+    cursor: pointer;
     /* background-color: red; */
     
 }
@@ -501,3 +502,67 @@ background-color: #F3EBEE;
     #head .sep p:hover::after{
         width: 30%;
     }
+
+    #page5{
+        height: 100vh;
+        width: 100%;
+        background-color: #F3EBEE;
+    }
+    .aboutus{
+
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: #4886dd;
+    }.about-1{
+        width: 50%;
+        overflow: hidden;
+        position: relative;
+        height: 100%;
+        background-color: #6248DD;
+    }.about-2{
+        width: 50%;
+        height: 100%;
+        background-color: #551790;
+    }
+#div{
+    height: 100%;
+    width: 100%;
+    background-color: #551790;
+
+}#div img{
+    height: 100%;
+    width: 100%;
+    border-bottom-right-radius:1000px ;
+    border-top-right-radius:1000px ;
+   object-fit: cover;
+   transition: all ease-in-out 0.3s;
+}#div img:hover{
+    border-bottom-right-radius:0px ;
+    border-top-right-radius:0px ;
+    opacity: 0.5;
+}
+#header1{
+   text-align: center;
+   color: #F3EBEE;
+   margin-top: 40px;
+   text-transform: capitalize;
+   font-size: 2vw;
+}.top{
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 1.4vw;
+    margin-left: 40px;
+    margin-top: 80px;
+    color:#F3EBEE;
+}.top i{
+    font-size: 4vw;
+    
+}
+#center{
+    padding: 10px 50px;
+    color: #F3EBEE;
+}
